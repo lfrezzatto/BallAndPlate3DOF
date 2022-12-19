@@ -18,27 +18,27 @@ pip install opencv-python
 
 Aqui são explicados os principais arquivos do projeto, um a um.
 
-[control_main_v3.py](inserir link do arquivo no git)
+[control_main_v3.py](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/control_main_v3.py)
 
 Atua como principal algoritmo de controle, executado no Raspberry Pi. Possui duas threads principais, uma para captura de imagem utilizando a câmera e outra para a execução da função principal, de execução do controle. Na versão disponibilizada, é necessário alterar o algoritmo de controle para correto funcionamento.
 
-[prbs_servos.ino](inserir link do arquivo no git)
+[prbs_servos.ino](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/prbs_servos.ino)
 
 Algoritmo de reset dos servomotores, executado no Arduino. Utilizado quando há necessidade de fazer com que os servos voltem a posição de angulação 0.
 
-[comunicacao_sinal_de_controle.ino](inserir link do arquivo no git)
+[comunicacao_sinal_de_controle.ino](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/comunicacao_sinal_de_controle.ino)
 
 Corresponde à continuação da execução do algoritmo de controle, só que do lado do Arduino. O Raspberry envia os ângulos de rotação necessários para cada servomotor via comunicação python-arduino enquanto esse código está sendo executado, de forma a receber a informação com a angulação e aplicá-la nos três servos.
 
-[circulo.m](inserir link do arquivo no git)
+[circulo.m](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/circulo.m)
 
 Arquivo de suporte para execução da simulação no Simulink. É executado no Matlab. Tem como principal função, criar vetores de círculos e salvá-los no workspace, para serem utilizados na simulação da planta.
 
-[virtual_v11.slx](inserir link do arquivo no git)
+[virtual_v11.slx](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/virtual_v11.slx)
 
 Simulação da planta, executada no Simulink. Trata-se a malha de controle desenhada para simulação do sistema, já com a ação de controle.
 
-[monografia.pdf](inserir link do arquivo no git)
+[monografia.pdf](https://github.com/lfrezzatto/BallAndPlate3DOF/blob/main/monografia.pdf)
 
 Texto que relata a execução do projeto, com manual de uso no final para explicação mais detalhada da montagem da planta e funcionamento dos algoritmos.
 
